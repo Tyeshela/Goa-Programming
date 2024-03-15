@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter and Color Change</title>
+<style>
+  .dynamic-style {
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  p {
+    color: #000;
+  }
+</style>
+</head>
+<body>
+
+<div id="dynamicDiv" class="dynamic-style" style="background-color: #f0f0f0;">
+  <p id="counterParagraph">Counter: 0</p>
+  <button onclick="changeContent()">Click Me</button>
+</div>
+
+<script>
+// JavaScript part
+let count = 0;
+function changeContent() {
+  // Increment the counter
+  count++;
+  document.getElementById("counterParagraph").innerText = "Counter: " + count;
+  
+  // Change the background color of the div and text color of the paragraph
+  const div = document.getElementById("dynamicDiv");
+  const paragraph = document.getElementById("counterParagraph");
+  div.style.backgroundColor = getRandomColor();
+  paragraph.style.color = getRandomColor();
+}
+
+// Function to generate random color
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+</script>
+
+</body>
+</html>

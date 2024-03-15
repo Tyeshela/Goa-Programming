@@ -1,0 +1,10 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+}
+.child {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: skyblue;
+}

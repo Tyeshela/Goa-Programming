@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Switcher</title>
+</head>
+<body>
+    <img id="dynamicImage" src="image1.png" alt="Dynamic Image" style="width: 100px; height: 100px;">
+    <button onclick="switchImage()">Switch Image</button>
+
+    <script>
+        let isImage1 = true;
+
+        function switchImage() {
+            const imageElement = document.getElementById('dynamicImage');
+            if (isImage1) {
+                imageElement.src = "image2.png";
+            } else {
+                imageElement.src = "image1.png";
+            }
+            isImage1 = !isImage1;
+        }
+    </script>
+</body>
+</html>

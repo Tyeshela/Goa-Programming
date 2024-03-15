@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+    <p id="para3"></p>
+    <p id="para4"></p>
+    <p id="para5"></p>
+    <button onclick="generateRandomNumbers()">Generate Numbers</button>
+
+    <script>
+        function generateRandomNumbers() {
+            let nums = new Set(); // Use a Set to ensure all numbers are unique
+
+            // Keep generating random numbers and adding them to the set until it has 5 unique numbers
+            while(nums.size < 5) {
+                nums.add(Math.floor(Math.random() * 10) + 1);
+            }
+
+            // Convert the Set to an Array to easily access elements by index
+            let numArray = Array.from(nums);
+
+            // Assign each unique random number to a paragraph
+            document.getElementById('para1').innerHTML = numArray[0];
+            document.getElementById('para2').innerHTML = numArray[1];
+            document.getElementById('para3').innerHTML = numArray[2];
+            document.getElementById('para4').innerHTML = numArray[3];
+            document.getElementById('para5').innerHTML = numArray[4];
+        }
+    </script>
+</body>
+</html>
