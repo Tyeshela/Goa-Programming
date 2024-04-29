@@ -1,5 +1,5 @@
-first_name = "David"
-last_name = "Tkeshelashvili"
+first_name = "Alex"
+last_name = "Katsarava"
 
 vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
 

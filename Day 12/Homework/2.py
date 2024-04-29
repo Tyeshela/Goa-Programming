@@ -1,7 +1,7 @@
 # First names
-first_names = ["David", "Maia", "Kaxa"]
+first_names = ["Alex", "Sofo", "David"]
 # Common last name for simplicity in this example
-common_last_name = "Tkeshelashvili"
+common_last_name = "Katsarava"
 
 # Initialize the list for full names
 full_names = []

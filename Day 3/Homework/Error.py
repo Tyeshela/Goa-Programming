@@ -1,9 +1,9 @@
 Print("Hello World")  # 1. Print should be lowercase
 
-x = "OpenAI
+x = "Alex
 # 2. Missing closing quotation marks
 
-y = 'ChatGPT
+y = 'Latso
 # 3. Missing closing single quotation
 
 z = 5
@@ -19,7 +19,7 @@ c = 10
 d = "20"
 print(c + d)  # 7. Trying to add an integer and a string
 
-e = 'The current value of e is ' e
+e = 'My name is ' e
 # 8. Missing + for string concatenation
 
 f = 'The sum of c and d is ' + (c + d)
